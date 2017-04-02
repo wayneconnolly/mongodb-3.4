@@ -1,14 +1,6 @@
 # mongodb-3.4
 A docker mongodb version 3.4 with user, password and engine options.
 
-MongoDB version/history
----------------
-
-Version 3.4. 
-
-Originally this came from the now depreciated tatum/mongodb docker repo. Forked and upgraded to v3.4.
-
-
 Usage
 -----
 
@@ -105,3 +97,9 @@ In MongoDB 3.0 the variable `OPLOG_SIZE` can be used to specify the mongod oplog
 
 By default MongoDB allocates 5% of the available free disk space, but will always allocate at least 1 gigabyte and never more than 50 gigabytes.
 
+MongoDB-3.4/history
+---------------
+
+Version 3.4. 
+
+Originally this came from the now depreciated tatum/mongodb docker repo. Forked and upgraded to v3.4.
