@@ -15,10 +15,7 @@ if [ "$OPLOG_SIZE" != "" ]; then
     cmd="$cmd --oplogSize $OPLOG_SIZE"
 fi
 
-$cmd &
-
-if [ ! -f /data/db/.mongodb_password_set ]; then
-    /set_mongodb_password.sh
-fi
+FILE=/data/db/mongodb_password_set
+$cmd & [ -e "${FILE}" ] || /set_mongodb_password.sh
 
 fg
